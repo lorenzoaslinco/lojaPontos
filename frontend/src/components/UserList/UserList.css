@@ -1,0 +1,82 @@
+div.userListWrapper {
+  text-align: center;
+}
+
+.userListWrapper h2 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.userListWrapper {
+  width: 98%;
+}
+
+.userList {
+  padding-bottom: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.userList table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+.userList th, .userList td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.userList tr {
+  font-weight: 500;
+}
+
+.userList th {
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+}
+
+.userList tr:nth-child(even) {
+  background-color: black;
+  color: white;
+}
+
+.userList tr:nth-child(odd) {
+  background-color: #ddd;
+  color: black;
+}
+
+.userList tr:nth-child(even):hover {
+  background-color: #444;
+}
+
+.userList tr:nth-child(odd):hover {
+  background-color: #aaa;
+}
+
+.userList button {
+  padding: 5px 10px;
+  margin-left: 10%;
+}
+
+.userList input {
+  background-color: red;
+  border: 2px solid;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+.userList tr:nth-child(even) input {
+  border-color: white;
+}
+
+.userList tr:nth-child(odd) input {
+  border-color: black;
+}

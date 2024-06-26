@@ -1,0 +1,17 @@
+body {
+  background-color: #aaa;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 1rem;
+}

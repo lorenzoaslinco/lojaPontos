@@ -1,0 +1,59 @@
+form.login-user {
+  width: 400px;
+  margin: 20vh auto;
+  text-align: center;
+  padding: 100px 50px;
+  border: 2px solid white;
+  border-radius: 15px;
+  background: black;
+}
+
+.login-user label {
+  color: white;
+}
+
+.container--emailLogin {
+  margin-bottom: 1rem;
+}
+
+.container--emailLogin label {
+  margin: 0 3rem 0 2rem;
+}
+
+.container--passwordLogin {
+  margin-bottom: 1rem;
+}
+
+.container--passwordLogin label {
+  margin: 0 3rem 0 2rem;
+}
+
+.login-user button[type='submit'] {
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1em 5em;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.message.error {
+  color: white;
+  background-color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+
+.message.success {
+  color: white;
+  background-color: green;
+  font-weight: bold;
+}

@@ -1,0 +1,73 @@
+.userImportForm {
+  background: #ccc;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 500px;
+  text-align: center;
+}
+
+.userImportForm div > p {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.userImportForm p {
+  line-height: 32px;
+}
+
+.csvForm label,
+.buttonForm button {
+  background-color: red;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  font-size: 1rem;
+  font-weight: 700;
+  height: auto;
+  cursor: pointer;
+}
+
+.csvForm label:hover,
+.buttonForm button:hover {
+  background-color: #2d5ba3;
+  color: white;
+}
+
+.csvForm label:active,
+.buttonForm button:active {
+  background-color: #0d3f8f;
+  color: white;
+}
+
+.csvForm input {
+  display: none;
+}
+
+.message.infoInicial {
+  color: blue;
+}
+
+.message.info {
+  color: white;
+  background-color: blue;
+}
+
+.message.success {
+  color: white;
+}
+
+.message.warn {
+  color: white;
+  background-color: orange;
+}
+
+.message.error {
+  color: white;
+}

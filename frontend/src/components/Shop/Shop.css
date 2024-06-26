@@ -1,0 +1,195 @@
+.wrapper {
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title {
+  margin: 20px auto;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.subtitle {
+  margin: 20px auto 40px auto;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  color: white;
+}
+
+.product-item {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+  background-color: #888;
+  box-shadow: 0 0 5px 1px black;
+}
+
+.product-item .buttonComprar {
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.product-item .buttonComprar:hover {
+  background: rgba(0, 128, 0, 0.75);
+  transform: scale(1.1);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.product-image:hover {
+  cursor: pointer;
+}
+
+.point-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+
+/* Estilos do Modal */
+.Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.group-1,
+.group-2,
+.group-3 {
+  width: 100%;
+  margin: .5rem auto;
+}
+
+.group-3 {
+  margin-bottom: 2rem;
+}
+
+.group-1 .input,
+.group-2 .input, 
+.group-3 .input,
+.group-3 .select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* GROUP-1 */
+.input--street {
+  width: 50%;
+  margin-right: 1rem;
+}
+
+.input--houseNumber {
+  width: 15%;
+}
+
+/* GROUP-2 */
+.input--neighborhood {
+  width: 40%;
+  margin-right: 1rem;
+}
+
+.input--complement {
+  width: 25%;
+}
+
+/* GROUP-3 */
+.input--city {
+  width: 20%;
+  margin-right: .5rem;
+}
+
+.select--state {
+  width: 20%;
+  margin-right: .5rem;
+}
+
+.input--zipCode {
+  width: 25%;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 30%;
+}
+
+.btn--confirmBuy {
+  background-color: green;
+  margin-right: 1rem;
+}
+
+.btn--cancel {
+  background-color: red;
+}
+
+/* Estilos do Modal de Imagem */
+.ImageModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.zoomed-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
