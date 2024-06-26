@@ -23,6 +23,19 @@ const AdminOrders = ({ token }) => {
     fetchOrders();
   }, [token]);
 
+  const handleCancelOrder = async (orderId) => {
+    try {
+      await axios.post(`http://localhost:5000/api/orders/cancel/${orderId}`, {}, {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      });
+      setOrders(orders.filter(order => order._id !== orderId));
+    } catch (error) {
+      console.error('Erro ao cancelar pedido:', error);
+    }
+  }
+
   return (
     <>
       <PageTitle title="Pedidos" />
@@ -37,6 +50,7 @@ const AdminOrders = ({ token }) => {
                   <th>Produto</th>
                   <th>Endereço</th>
                   <th>Data do Pedido</th>
+                  <th>Excluir</th>
                 </tr>
               </thead>
               <tbody>
@@ -46,6 +60,9 @@ const AdminOrders = ({ token }) => {
                     <td className="productName">{order.product.name}</td>
                     <td className="orderAddress">{order.address}</td>
                     <td className="dateOrder">{new Date(order.date).toLocaleDateString()}</td>
+                    <td className="deleteOrder">
+                      <button onClick={() => handleCancelOrder(order._id)}>Cancelar Pedido</button>
+                    </td>
                   </tr>
                 ))}
               </tbody>
