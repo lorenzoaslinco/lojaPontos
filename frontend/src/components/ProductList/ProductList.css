@@ -1,6 +1,6 @@
 .product-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -8,12 +8,10 @@
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
-  width: 200px;
-  text-align: center;
+  background: #f9f9f9;
 }
 
 .product-image {
-  width: 100%;
   height: auto;
   border-radius: 5px;
 }

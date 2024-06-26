@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import './ProductList.css';
+import coinIcon from '../../images/coin.png';
 
 const ProductList = ({ isAdmin }) => {
   const [products, setProducts] = useState([]);
@@ -31,14 +32,37 @@ const ProductList = ({ isAdmin }) => {
   return (
     <div className="wrapper">
       <h2>Lista de Produtos</h2>
+      <hr></hr>
       <div className="product-list">
-        {products.map((product) => (
-          <div key={product._id} className="product-item">
-            <img src={`http://localhost:5000/${product.imageUrl}`} alt={product.name} className="product-image" />
-            <span>{product.name} - {product.description} - ${product.price.toFixed(2)}</span>
-            {isAdmin && <button onClick={() => handleDelete(product._id)}>Excluir</button>}
-          </div>
-        ))}
+        <table>
+          <thead>
+            <tr>
+              <th>Imagem</th>
+              <th>Nome</th>
+              <th>Descrição</th>
+              <th>Preço</th>
+              <th>Excluir</th>
+            </tr>
+          </thead>
+          <tbody>
+            {products.map((product) => (
+              <tr key={product._id} className="product-item">
+                <td className="productImg">
+                  <img src={`http://localhost:5000/${product.imageUrl}`} alt={product.name} className="product-image" />
+                </td>
+                <td className="productName">{product.name}</td>
+                <td className="productDescription">{product.description}</td>
+                <td className="productPrice">
+                  <img src={coinIcon} alt="ponto" className="point-icon" />
+                  {product.price}
+                </td>
+                <td className="deleteProduct">
+                  {isAdmin && <button onClick={() => handleDelete(product._id)}>Excluir</button>}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );
